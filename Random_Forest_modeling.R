@@ -1,5 +1,5 @@
-#charles Ferté
-
+# Charles Ferté
+#
 
 ###
 require(Biobase)
@@ -34,6 +34,7 @@ erPerf <- performance(prediction.obj=erPred,"tpr","fpr")
 erAUC <- performance(prediction.obj=erPred,"auc")
 plot(erPerf, col=rainbow(10))
 text(x=.7,y=.4,labels=paste("AUC=",erAUC@y.values))
+
 
 
 
